@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>Estruturas de repetição</title>
+        <meta charset="UTF-8">
+        <script>
+            /* Vai receber uma quantidade do notas para serem avaliadas e vai mostrar a soma entre elas,
+            a nota e a média  */
+            let contador = 1;
+            const qtd = prompt('Quantas notas serão avaliadas?');
+            let soma = 0;
+            let nota = 0;
+
+            while(contador <= qtd){
+                nota = Number(prompt('Digite a nota'));
+                soma = soma + nota
+                contador++              
+            }
+            
+            console.log('A soma é: ' + soma);
+            console.log('A nota é: ' + nota);
+            console.log('A média é: ' + soma/qtd);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

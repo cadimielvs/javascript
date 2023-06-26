@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Estruturas de condição</title>
+       
+       <script>
+        /*
+        Verificar o aumento de salário de acordo com os seguintes critérios:
+        - Estagiário: 100%
+        - Analista: 50%
+        - Gerente: 30%
+        - Presidente: 10%
+        */
+
+        const cargo= prompt('Digite um cargo')
+        let aumento
+
+        switch(cargo){
+            case 'Estagiário':aumento = '100%'
+            break; // O break é necessário para que não pule para a próxima linha.
+            case 'Analista':aumento = '50%'; break;
+            case 'Gerente':aumento = '30%'; break;
+            case 'Presidente':aumento = '10%'
+            break
+            default: alert('Digite um cargo válido!')
+        }
+        
+        console.log(aumento)
+       </script>
+
+    </head>
+    <body>
+
+    </body>
+</html> 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <script>
+
+            // Passo 2: Cirar a função de soma
+            function somar(){
+                /* Passo 3: Recuperar os valores digitados no formulário usando o Id e coloca
+                os valores nas variáveis vn1 e vn2 */
+                const vn1 = document.getElementById('n1').value
+                const vn2 = document.getElementById('n2').value
+
+                // Passo 4: Como o getElementById também recupera string vamos usar o "Number"
+                const soma = Number(vn1) + Number(vn2)
+
+                // Passo 6: Recuperar o id resultado em uma nova variável
+                const resultado = document.getElementById('resultado')
+                /* Passo 7: Como o id resultado não tem um valor então vamos recupera o html contido
+                usando o inner.HTML
+                */ 
+                resultado.innerHTML = 'A soma dos números é ' + soma
+
+                console.log("A soma dos números é " + soma)
+            }
+           
+        
+        </script>
+    </head>
+    <body>
+        <!-- Passo 1: Criar formulário para adicionar os números -->
+        <form action=''>
+            N1:  <input type="text" id='n1' /> <br><br>
+            N2:  <input type='text' id='n2' /> <br><br>
+                <input type="button" value="Somar" onclick="somar()">
+
+            <!--
+                Passo 5: Exibir mensagem com o resultado na tela. Criar o texto em h1 e            
+            criar um id para ele-->
+            <h1 id="resultado">O resultado é</h1>
+        </form>
+
+    </body>
+</html>
