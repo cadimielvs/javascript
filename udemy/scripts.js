@@ -1,5 +1,38 @@
-var areaVar = document.getElementById('areaId')
+// --- ESTRUTURAS DE REPETIÇÃO ---
+//for
 
+var valor = prompt("Digite um número: ");
+
+for(y = 0; y <= valor; y++){
+    document.write("<br> O valor de Y é: " + y);
+}
+
+
+
+
+/*
+
+// while
+var x = 0;
+while(x < 15){
+    document.write("<br> O valor de x é: " + x);
+    x++;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+/*
+--- CÓDIGO DAS AULAS UDEMY SOBRE FUNÇÕES ---
+
+var areaVar = document.getElementById('areaId')
 
 function entrar() {
     var nome = prompt('Informe seu nome:')
@@ -35,4 +68,6 @@ function mediaAluno(nota1, nota2) {
         console.log("O aluno está REPROVADO com média " + media)
     }
 
-}
+} 
+
+*/
