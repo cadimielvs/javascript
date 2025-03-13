@@ -1,6 +1,26 @@
+var peso;
+var altura;
+var imc;
+var resultado;
+
+
+function calcular(event) {
+    event.preventDefault();
+    
+    peso = document.getElementById('peso').value;
+    altura = document.getElementById("altura").value;
+    imc = peso / (altura * altura);
+    alert(imc)
+}
+
+
+
+
+
+
 // --- ESTRUTURAS DE REPETIÇÃO ---
 //for
-
+/*
 var valor = prompt("Digite um número: ");
 
 for(y = 0; y <= valor; y++){
@@ -10,7 +30,7 @@ for(y = 0; y <= valor; y++){
 
 
 
-/*
+
 
 // while
 var x = 0;
